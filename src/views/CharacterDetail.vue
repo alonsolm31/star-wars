@@ -64,11 +64,16 @@ export default {
       worldHover: false,
     };
   },
-  mounted() {},
+  mounted() {
+      this.scrollToTop();
+  },
   created() {
     this.getPeople();
   },
   methods: {
+    scrollToTop() {
+            window.scrollTo(0,0);
+    },
     getPeople() {
       swapi.people.getPeople(this.$route.params.id).then((response) => {
         this.people = response;

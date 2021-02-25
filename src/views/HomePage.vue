@@ -30,7 +30,6 @@
           film: Object,
           sortByDate: undefined,
           sortByEpisode: undefined,
-          hover:false
 
         }
     },
@@ -58,6 +57,7 @@
           return  b.episode_id -  a.episode_id;
           });
         }
+        window.scrollTo(500,500);
       },
       sortDesc(sortTo){
         if(sortTo=='date'){
@@ -71,6 +71,7 @@
             return a.episode_id - b.episode_id;
           });
         }
+        window.scrollTo(500,500);
       }
 
     }
@@ -79,7 +80,7 @@
 
 <style lang="scss" scoped>
 	.home-page {
-    background-image: url("../assets/img/by.png");
+
 		.grid {
 			display: grid;
 			grid-template-columns: 1rem ;

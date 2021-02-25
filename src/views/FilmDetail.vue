@@ -45,12 +45,17 @@ export default {
       peopleList: [],
     };
   },
-  mounted() {},
+  mounted() {
+      this.scrollToTop();
+  },
   computed: {},
   created() {
     this.getFilm();
   },
   methods: {
+    scrollToTop() {
+            window.scrollTo(0,0);
+    },
     getFilm() {
       console.log(this.$route.params.id);
       swapi.films.getFilm(this.$route.params.id).then((response) => {

@@ -33,10 +33,11 @@ export default {
     z-index: 999;
     overflow: hidden;
     background-color: rgb(247, 203, 11);
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   .topnav a {
+    cursor: pointer;
     float: center;
     color: #f2f2f2;
     text-align: center;
@@ -51,12 +52,11 @@ export default {
   }
 
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: rgb(170, 140, 5);;
     color: white;
   }
 	#app {
-
-
+    background-image: url("./assets/img/by.png");
 		font-family: 'Lato','Helvetica Neue', Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
