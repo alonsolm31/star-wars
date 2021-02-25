@@ -1,5 +1,14 @@
 # star-wars
 
+## node version
+```
+v8.15.1
+```
+## npm version
+```
+6.14.3
+```
+
 ## Project setup
 ```
 npm install
